@@ -1,0 +1,79 @@
+[{
+        "id": "lesson-0",
+        "label": "Introduction",
+        "title": "Introducing the Good News of the Kingdom",
+        "route": "Introduction"
+    },
+    {
+        "id": "lesson-1",
+        "label": "Lesson 1",
+        "title": "Salvation",
+        "route": "Lesson1"
+    },
+    {
+        "id": "lesson-2",
+        "label": "Lesson 2",
+        "title": "Born Again",
+        "route": "Lesson2"
+    },
+    {
+        "id": "lesson-3",
+        "label": "Lesson 3",
+        "title": "Three Aspect of Salvation",
+        "route": "Lesson3"
+    },
+    {
+        "id": "lesson-4",
+        "label": "Lesson 4",
+        "title": "Spiritual Growth and Importance of House Church",
+        "route": "Lesson4"
+    },
+    {
+        "id": "lesson-5",
+        "label": "Lesson 5",
+        "title": "How to Overcome Temptation",
+        "route": "Lesson5"
+    },
+    {
+        "id": "lesson-6",
+        "label": "Lesson 6",
+        "title": "Overcoming Fear",
+        "route": "Lesson6"
+    },
+    {
+        "id": "lesson-7",
+        "label": "Lesson 7",
+        "title": "Overcoming Family Problems",
+        "route": "Lesson7"
+    },
+    {
+        "id": "lesson-8",
+        "label": "Lesson 8",
+        "title": "Overcoming Depression",
+        "route": "Lesson8"
+    },
+    {
+        "id": "lesson-9",
+        "label": "Lesson 9",
+        "title": "Overcoming Rejection",
+        "route": "Lesson9"
+    },
+    {
+        "id": "lesson-10",
+        "label": "Lesson 10",
+        "title": "Experiencing Healing",
+        "route": "Lesson10"
+    },
+    {
+        "id": "lesson-11",
+        "label": "Lesson 11",
+        "title": "The Power of Divine Appointment",
+        "route": "Lesson11"
+    },
+    {
+        "id": "lesson-12",
+        "label": "Lesson 12",
+        "title": "Preparing Yourself for the Divine Appointment",
+        "route": "Lesson12"
+    }
+]

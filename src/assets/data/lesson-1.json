@@ -1,0 +1,98 @@
+{
+    "label": "Lesson 1",
+    "title": "Salvation",
+    "introduction": "In Mark 1:1, the Good News of Jesus Christ – THE MESSAGE – begins here!",
+    "guideQuestion": {
+        "label": "Guide Question",
+        "message": "Why do we need to be saved? What is wrong with us? Why do we need to believe in the Lord Jesus Christ in order to be saved? Let us answer this question."
+    },
+    "topic": {
+        "first": {
+            "number": 1,
+            "title": "There is a barrier that separates us from God",
+            "message": "Have you ever felt that God was far from you?",
+            "scripture": [{
+                "title": "",
+                "book": "Isaiah 59:2",
+                "message": "But your iniquities have separated you from your God; your sins have hidden his face from you, so that he will not hear."
+            }]
+        },
+        "second": {
+            "number": 2,
+            "title": "Sins separate us from the Lord",
+            "message": "We may or may not know God. We are maybe far or near God. But the Bible is clear that through our sins we had been separated from God.",
+            "scripture": [{
+                "title": "",
+                "book": "Romans: 3:23",
+                "message": "For all have sinned, and come short of the glory of God;"
+            }, {
+                "title": "",
+                "book": "Romans 6:23",
+                "message": "For the wages of sin is death; but the gift of God is eternal life through Jesus Christ our Lord."
+            }]
+        },
+        "third": {
+            "number": 3,
+            "title": "Sin must be paid with sacrifice",
+            "message": "",
+            "scripture": [{
+                "title": "",
+                "book": "Hebrews 9:28",
+                "message": "So Christ was once offered to bear the sins of many; and unto them that look for him shall he appear the second time without sin unto salvation."
+            }, {
+                "title": "",
+                "book": "John 1:29",
+                "message": "The next day John saw Jesus coming toward him and said, “Look, the Lamb of God, who takes away the sin of the world!"
+            }, {
+                "title": "",
+                "book": "Romans 3:25-26",
+                "message": "God presented Christ as a sacrifice of atonement, through the shedding of his blood—to be received by faith. He did this to demonstrate his righteousness, because in his forbearance he had left the sins committed beforehand unpunished he did it to demonstrate his righteousness at the present time, so as to be just and the one who justifies those who have faith in Jesus."
+            }]
+        },
+        "fourth": {
+            "number": 4,
+            "title": "Jesus, as the sacrifice, paid the punishment of our sins",
+            "message": "What happen in the cross? There is a Divine and Beautiful Exchange.",
+            "scripture": [{
+                "title": "CURSED TO BLESSING",
+                "book": "Galatians 3:13-14",
+                "message": "Christ redeemed us from the curse of the law by becoming a curse for us, for it is written: “Cursed is everyone who is hung on a pole.” He redeemed us in order that the blessing given to Abraham might come to the Gentiles through Christ Jesus, so that by faith we might receive the promise of the Spirit."
+            }, {
+                "title": "POVERTY TO PROSPERITY",
+                "book": "2 Corinthians 8:9",
+                "message": "And God is able to bless you abundantly, so that in all things at all times, having all that you need, you will abound in every good work. For you know the grace of our Lord Jesus Christ, that though he was rich, yet for your sake he became poor, so that you through his poverty might become rich."
+            }, {
+                "title": "TO PARTAKE IN HIS RIGHTEOUSNESS",
+                "book": "2 Corinthians 5:21",
+                "message": "God made him who had no sin to be sin for us, so that in him we might become the righteousness of God."
+            }],
+            "messageTwo": "We received the benefits of the Good News of the Kingdom."
+        },
+        "fifth": {
+            "number": 5,
+            "title": "And Now Received salvation by abandoning sin and trusting Jesus",
+            "message": "",
+            "scripture": [{
+                "title": "",
+                "book": "2 Corinthians 5:19",
+                "message": "That God was reconciling the world to himself in Christ, not counting people's sins against them. And he has committed to us the message of reconciliation"
+            }, {
+                "title": "",
+                "book": "Romans 10:9-10",
+                "message": "If you declare with your mouth, “Jesus is Lord,” and believe in your heart that God raised him from the dead, you will be saved. For it is with your heart that you believe and are justified, and it is with your mouth that you profess your faith and are saved"
+            }]
+        }
+    },
+    "application": {
+        "label": "Application",
+        "message": [
+            "Are you ready to leave your sins and surrender your lives to Jesus?",
+            "Are you ready to follow and obey the Lord with all your heart?",
+            "Are you ready to pray and receive your forgiveness and salvation?"
+        ]
+    },
+    "prayer": {
+        "label": "The Sinners Prayer",
+        "message": "Lord Jesus, I repent for all my sins. Sins of my soul, body and spirit, I repent Lord. Now, I receive your forgiveness and receive you as my Lord and Personal Savior, Lord Jesus Christ. I open my lives to you. Holy Spirit, take over me. In Jesus name Amen."
+    }
+}

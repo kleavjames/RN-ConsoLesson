@@ -1,0 +1,96 @@
+{
+    "label": "Lesson 2",
+    "title": "Born Again",
+    "scripture": [{
+        "title": "The Little Children and Jesus",
+        "book": "Mark 10:13-16",
+        "message": "13 People were bringing little children to Jesus for him to place his hands on them, but the disciples rebuked them. 14 When Jesus saw this, he was indignant. He said to them, “Let the little children come to me, and do not hinder them, for the kingdom of God belongs to such as these.15 Truly I tell you, anyone who will not receive the kingdom of God like a little child will never enter it.” 16 And he took the children in his arms placed his hands on them and blessed them."
+    }],
+    "topic": {
+        "first": {
+            "number": 1,
+            "title": "What is being born again?",
+            "message": "First of all, born again is not a sect or group that you could apply in and be one.",
+            "scripture": [{
+                "title": "",
+                "book": "John 1:13",
+                "message": "children born not of natural descent, nor of human decision or a husband’s will, but born of God."
+            }],
+            "messageTwo": "Being born again is a spiritual experience wherein one person is birth in the family of God.",
+            "scriptureTwo": [{
+                "title": "",
+                "book": "John 3:6",
+                "message": "That which is born of the flesh is flesh; and that which is born of the Spirit is spirit."
+            }]
+        },
+        "second": {
+            "number": 2,
+            "title": "Why do we need to be born again? Is it not all people are children of God?",
+            "message": "",
+            "scripture": [{
+                "title": "",
+                "book": "1 John 3:10",
+                "message": "This is how we know who the children of God are and who the children of the devil are: Anyone who does not do what is right is not God's child, nor is anyone who does not love their brother and sister."
+            }],
+            "subTopic": [{
+                "title": "Two Types of person in the world",
+                "items": [
+                    "children of God",
+                    "children of Satan"
+                ]
+            }, {
+                "title": "Two types of Birth in the world",
+                "items": [
+                    "Physical Birth",
+                    "Spiritual Birth"
+                ]
+            }],
+            "messageTwo": "Yes, all human being are God’s masterpieces but not all are God’s children.",
+            "subScripture": [{
+                "title": "Physical Birth",
+                "books": [{
+                    "book": "Psalm 51:5",
+                    "message": "Surely I was sinful at birth, sinful from the time my mother conceived me."
+                }, {
+                    "book": "Romans 3:23",
+                    "message": "For all have sinned, and come short of the glory of God",
+                    "reference": [
+                        "Spiritually Dead or separated from God – Ephesians 2:1, Romans 6:23",
+                        "Under Satan’s control – Ephesians 2:2, 1 John 3:8",
+                        "Destined to hell – Matthew 25:41"
+                    ]
+                }]
+            }, {
+                "title": "Spiritual Birth",
+                "book": "John 3:6",
+                "message": "That which is born of the flesh is flesh; and that which is born of the Spirit is spirit."
+            }]
+        },
+        "third": {
+            "number": 3,
+            "title": "How to be born again?",
+            "message": "",
+            "scripture": [{
+                "title": "",
+                "book": "John 3:3",
+                "message": "Jesus replied, “Very truly I tell you, no one can see the kingdom of God unless they are born again."
+            }, {
+                "title": "",
+                "book": "John 1:12-13",
+                "message": " Yet to all who did receive him, to those who believed in his name, he gave the right to become children of God children born not of natural descent, nor of human decision or a husband’s will, but born of God."
+            }, {
+                "title": "",
+                "book": "Galatians 3:26",
+                "message": " So in Christ Jesus you are all children of God through faith..."
+            }]
+        }
+    },
+    "application": {
+        "label": "Application",
+        "message": [
+            "Are you now sure that your are a child of God? Why? If not, are you even more ready to receive Him as your savior?",
+            "What is the difference between the new ones and the matured?",
+            "What to do in order to grow and be matured in the Lord?"
+        ]
+    }
+}

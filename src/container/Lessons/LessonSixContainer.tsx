@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigation } from '@react-navigation/native';
 
@@ -12,11 +12,13 @@ export default () => {
   const hideTabBar = () => dispatch(customNavigation.onHideTab());
   const showTabBar = () => dispatch(customNavigation.onShowTab());
 
-  return (
-    <LessonSix
-      hideTabBar={hideTabBar}
-      showTabBar={showTabBar}
-      navigation={navigation}
-    />
-  );
+  useEffect(() => {
+    const unsubscribe = navigation.addListener('beforeRemove', () => {
+      showTabBar();
+    });
+
+    return unsubscribe;
+  }, [navigation]);
+
+  return <LessonSix hideTabBar={hideTabBar} showTabBar={showTabBar} />;
 };

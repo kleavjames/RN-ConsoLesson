@@ -29,15 +29,21 @@ const RenderVerse = ({ verses }: { verses: VerseType[] | any }) => {
 
 const Topic: React.FC<Props> = props => {
   const selectAppSetting = (state: AppState) => state.appSettings;
-  const { fontSize } = useSelector(selectAppSetting);
+  const { fontSize, fontSelected } = useSelector(selectAppSetting);
 
   return (
     <View>
       <View style={styles.titleContainer}>
-        <Text style={[styles.topicText(fontSize), styles.number]}>
+        <Text
+          style={[
+            styles.topicText(fontSize, fontSelected.boldFont),
+            styles.number,
+          ]}>
           {props.topic.number}.
         </Text>
-        <Text style={styles.topicText(fontSize)}>{props.topic.title}</Text>
+        <Text style={styles.topicText(fontSize, fontSelected.boldFont)}>
+          {props.topic.title}
+        </Text>
       </View>
       {props.topic.message ? (
         <Paragraph>{props.topic.message}</Paragraph>
@@ -69,8 +75,8 @@ const styles = StyleSheet.create<any>({
   space: {
     marginBottom: 15,
   },
-  topicText: (fontSize: number) => ({
-    fontFamily: 'Avenir-Book',
+  topicText: (fontSize: number, font: string) => ({
+    fontFamily: font,
     fontSize,
     color: Theme.DARK_COLOR,
     fontWeight: 'bold',

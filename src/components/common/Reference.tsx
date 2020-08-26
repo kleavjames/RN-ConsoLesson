@@ -16,11 +16,13 @@ interface Props {
 
 const Reference: React.FC<Props> = props => {
   const selectAppSettings = (state: AppState) => state.appSettings;
-  const { fontSize, headerFontSize } = useSelector(selectAppSettings);
+  const { fontSize, headerFontSize, fontSelected } = useSelector(
+    selectAppSettings,
+  );
 
   const renderTopicItems = () =>
     props.topic.items.map((item, i) => (
-      <Text key={i} style={styles.item(fontSize)}>
+      <Text key={i} style={styles.item(fontSize, fontSelected.lightFont)}>
         {i + 1}. {item}
       </Text>
     ));
@@ -28,7 +30,9 @@ const Reference: React.FC<Props> = props => {
   return (
     <View style={styles.container}>
       {props.topic.title ? (
-        <Text style={styles.title(headerFontSize)}>{props.topic.title}</Text>
+        <Text style={styles.title(headerFontSize, fontSelected.boldFont)}>
+          {props.topic.title}
+        </Text>
       ) : null}
       {renderTopicItems()}
     </View>
@@ -45,15 +49,14 @@ const styles = StyleSheet.create<any>({
     marginBottom: 20,
     marginHorizontal: 20,
   },
-  title: (fontSize: number) => ({
-    fontFamily: 'Avenir-Book',
-    fontWeight: 'bold',
+  title: (fontSize: number, font: string) => ({
+    fontFamily: font,
     fontSize,
     color: Theme.LABEL_COLOR,
     marginBottom: 10,
   }),
-  item: (fontSize: number) => ({
-    fontFamily: 'Avenir-Light',
+  item: (fontSize: number, font: string) => ({
+    fontFamily: font,
     fontSize,
     paddingVertical: 3,
   }),

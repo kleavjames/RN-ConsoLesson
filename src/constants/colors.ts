@@ -7,6 +7,7 @@ export const TEXT_COLOR = '#535359';
 export const LABEL_COLOR = '#8E919E';
 export const BORDER_COLOR = '#D9D9D9';
 export const ERROR_COLOR = '#FF0000';
+export const SUCCESS_COLOR = '#01BD3E';
 export const DARK_COLOR = '#171C26';
 
 // 2B76D4

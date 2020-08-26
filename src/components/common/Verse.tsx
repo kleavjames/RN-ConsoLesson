@@ -25,12 +25,16 @@ interface Props {
 
 const Verse: React.FC<Props> = props => {
   const selectAppSettings = (state: AppState) => state.appSettings;
-  const { fontSize, headerFontSize } = useSelector(selectAppSettings);
+  const { fontSize, headerFontSize, fontSelected } = useSelector(
+    selectAppSettings,
+  );
 
   const subReference = (reference: string[]) => {
     return reference.map((ref: string, i: number) => (
       <View key={i} style={styles.reference}>
-        <Text style={styles.refText(fontSize)}>{ref}</Text>
+        <Text style={styles.refText(fontSize, fontSelected.lightFont)}>
+          {ref}
+        </Text>
       </View>
     ));
   };
@@ -40,7 +44,9 @@ const Verse: React.FC<Props> = props => {
       return props.scripture.books.map((script: VerseMessage, i: number) => {
         return (
           <View key={i}>
-            <Text style={styles.text(fontSize)}>{script.message}</Text>
+            <Text style={styles.text(fontSize, fontSelected.lightFont)}>
+              {script.message}
+            </Text>
             <View style={styles.bookContainer}>
               <Icon
                 style={styles.icon}
@@ -48,7 +54,9 @@ const Verse: React.FC<Props> = props => {
                 size={fontSize - 2}
                 color={Theme.DARK_COLOR}
               />
-              <Text style={styles.book(fontSize)}>{script.book}</Text>
+              <Text style={styles.book(fontSize, fontSelected.boldFont)}>
+                {script.book}
+              </Text>
             </View>
             {script.reference ? (
               <>
@@ -64,7 +72,9 @@ const Verse: React.FC<Props> = props => {
 
     return (
       <View>
-        <Text style={styles.text(fontSize)}>{props.scripture.message}</Text>
+        <Text style={styles.text(fontSize, fontSelected.lightFont)}>
+          {props.scripture.message}
+        </Text>
         <View style={styles.bookContainer}>
           <Icon
             style={styles.icon}
@@ -72,7 +82,9 @@ const Verse: React.FC<Props> = props => {
             size={fontSize - 2}
             color={Theme.DARK_COLOR}
           />
-          <Text style={styles.book(fontSize)}>{props.scripture.book}</Text>
+          <Text style={styles.book(fontSize, fontSelected.boldFont)}>
+            {props.scripture.book}
+          </Text>
         </View>
       </View>
     );
@@ -81,7 +93,7 @@ const Verse: React.FC<Props> = props => {
   return (
     <View style={styles.container}>
       {props.scripture.title ? (
-        <Text style={styles.title(headerFontSize)}>
+        <Text style={styles.title(headerFontSize, fontSelected.boldFont)}>
           {props.scripture.title}
         </Text>
       ) : null}
@@ -104,9 +116,8 @@ const styles = StyleSheet.create<any>({
     alignItems: 'center',
     justifyContent: 'flex-end',
   },
-  book: (fontSize: number) => ({
-    fontFamily: 'Avenir-Book',
-    fontWeight: 'bold',
+  book: (fontSize: number, font: string) => ({
+    fontFamily: font,
     fontSize,
     fontStyle: 'italic',
     marginTop: 5,
@@ -116,20 +127,20 @@ const styles = StyleSheet.create<any>({
     marginTop: 5,
     marginRight: 7,
   },
-  title: (fontSize: number) => ({
-    fontFamily: 'Avenir-Book',
+  title: (fontSize: number, font: string) => ({
+    fontFamily: font,
     fontSize,
     color: Theme.DARK_COLOR,
     marginBottom: 5,
   }),
-  text: (fontSize: number) => ({
-    fontFamily: 'Avenir-Light',
+  text: (fontSize: number, font: string) => ({
+    fontFamily: font,
     color: Theme.TEXT_COLOR,
     fontSize,
     textAlign: 'center',
   }),
-  refText: (fontSize: number) => ({
-    fontFamily: 'Avenir-Light',
+  refText: (fontSize: number, font: string) => ({
+    fontFamily: font,
     color: Theme.DARK_COLOR,
     fontSize,
   }),

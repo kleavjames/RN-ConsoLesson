@@ -1,3 +1,4 @@
+export { default as LessonsContainer } from './LessonsContainer';
 export { default as IntroductionContainer } from './IntroductionContainer';
 export { default as LessonOneContainer } from './LessonOneContainer';
 export { default as LessonTwoContainer } from './LessonTwoContainer';

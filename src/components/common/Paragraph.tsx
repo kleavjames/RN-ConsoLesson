@@ -11,11 +11,11 @@ interface Props {
 
 const Paragraph: React.FC<Props> = props => {
   const selectAppSettings = (state: AppState) => state.appSettings;
-  const { fontSize } = useSelector(selectAppSettings);
+  const { fontSize, fontSelected } = useSelector(selectAppSettings);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text(fontSize)}>
+      <Text style={styles.text(fontSize, fontSelected.regularFont)}>
         {'\t\t'}
         {props.children}
       </Text>
@@ -28,9 +28,9 @@ const styles = StyleSheet.create<any>({
     marginBottom: 15,
     marginHorizontal: 20,
   },
-  text: (fontSize: number) => ({
+  text: (fontSize: number, font: string) => ({
     fontSize,
-    fontFamily: 'Avenir-Roman',
+    fontFamily: font,
     color: Theme.TEXT_COLOR,
     textAlign: 'justify',
   }),

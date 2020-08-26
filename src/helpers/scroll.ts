@@ -1,9 +1,9 @@
-import { CustomNavigationActionTypes } from '../types/actions';
+import { AppActions } from '../types/actions';
 
 export const onStartScroll = (
   event: any,
-  show: () => CustomNavigationActionTypes,
-  hide: () => CustomNavigationActionTypes,
+  show: () => AppActions,
+  hide: () => AppActions,
 ) => {
   let offset = 0;
   const currentOffset = event.nativeEvent.contentOffset.y;

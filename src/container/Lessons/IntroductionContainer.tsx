@@ -8,7 +8,7 @@ import { AppState } from '../../reducers';
 
 export default () => {
   const selectAppSettings = (state: AppState) => state.appSettings;
-  const { headerFontSize } = useSelector(selectAppSettings);
+  const { headerFontSize, fontSelected } = useSelector(selectAppSettings);
   const dispatch = useDispatch();
 
   const navigation = useNavigation();
@@ -29,6 +29,7 @@ export default () => {
       hideTabBar={hideTabBar}
       showTabBar={showTabBar}
       headerFontSize={headerFontSize}
+      boldFontSelected={fontSelected.boldFont}
     />
   );
 };

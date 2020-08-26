@@ -8,7 +8,7 @@ import { MoreStackTypes } from '../../types/Navigation';
 const Stack = createStackNavigator<MoreStackTypes>();
 
 export default () => (
-  <Stack.Navigator screenOptions={navigationStyles.navigatorStyle} mode="modal">
+  <Stack.Navigator screenOptions={navigationStyles.navigatorStyle}>
     <Stack.Screen
       name="More"
       component={MoreScreen}

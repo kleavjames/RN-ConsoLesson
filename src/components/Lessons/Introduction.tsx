@@ -12,6 +12,7 @@ interface Props {
   showTabBar: () => AppActions;
   hideTabBar: () => AppActions;
   headerFontSize: number;
+  boldFontSelected: string;
 }
 
 interface ParagraphProps {
@@ -28,7 +29,10 @@ const Introduction: React.FC<Props> = ({
   showTabBar,
   hideTabBar,
   headerFontSize,
+  boldFontSelected,
 }) => {
+  console.log('bold font selected', boldFontSelected);
+
   return (
     <View style={globalStyles.container}>
       <ScrollView
@@ -40,7 +44,9 @@ const Introduction: React.FC<Props> = ({
         <RenderParagraph sentences={lesson.introductionTwo} />
         <Section lesson={lesson.declaration} />
         <View style={styles.last}>
-          <Text style={styles.lastText(headerFontSize)}>{lesson.request}</Text>
+          <Text style={styles.lastText(headerFontSize, boldFontSelected)}>
+            {lesson.request}
+          </Text>
         </View>
       </ScrollView>
     </View>
@@ -52,9 +58,9 @@ const styles = StyleSheet.create<any>({
     marginHorizontal: 40,
     marginBottom: 30,
   },
-  lastText: (fontSize: number) => ({
+  lastText: (fontSize: number, font: string) => ({
     fontSize,
-    fontFamily: 'Avenir-Book',
+    fontFamily: font,
     textAlign: 'center',
     color: Theme.LABEL_COLOR,
   }),

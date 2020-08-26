@@ -11,12 +11,14 @@ interface Props {
 
 const SectionHeader: React.FC<Props> = props => {
   const selectAppSettings = (state: AppState) => state.appSettings;
-  const { fontSize } = useSelector(selectAppSettings);
+  const { fontSize, fontSelected } = useSelector(selectAppSettings);
 
   return (
     <View style={styles.container}>
       <View style={styles.sectionHeader}>
-        <Text style={styles.label(fontSize)}>{props.label}</Text>
+        <Text style={styles.label(fontSize, fontSelected.boldFont)}>
+          {props.label}
+        </Text>
       </View>
     </View>
   );
@@ -32,12 +34,11 @@ const styles = StyleSheet.create<any>({
     backgroundColor: Theme.PRIMARY_COLOR,
     borderRadius: 30,
   },
-  label: (fontSize: number) => ({
+  label: (fontSize: number, font: string) => ({
     color: Theme.WHITE_COLOR,
     paddingVertical: 7,
     paddingHorizontal: 15,
-    fontFamily: 'Avenir-Book',
-    fontWeight: 'bold',
+    fontFamily: font,
     fontSize: fontSize - 4,
   }),
 });

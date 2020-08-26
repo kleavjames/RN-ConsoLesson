@@ -36,7 +36,7 @@ export type LessonStackTypes = {
   Lesson10: undefined;
   Lesson11: undefined;
   Lesson12: undefined;
-  Settings: undefined;
+  AppSettings: undefined;
 };
 
 export type MoreStackTypes = {
@@ -47,9 +47,19 @@ export type ProfileStackTypes = {
   Profile: undefined;
 };
 
-export type SettingsScreenProp = StackNavigationProp<
+export type AppSettingStackTypes = {
+  AppSetting: undefined;
+  FontSelection: undefined;
+};
+
+export type LessonsScreenProp = StackNavigationProp<
   LessonStackTypes,
-  'Settings'
+  'Lessons'
+>;
+
+export type AppSettingsScreenProp = StackNavigationProp<
+  AppSettingStackTypes,
+  'AppSetting'
 >;
 
 export type MainTabTypes = {

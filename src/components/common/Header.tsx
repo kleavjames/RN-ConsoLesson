@@ -11,18 +11,20 @@ interface Props {
 
 const Header: React.FC<Props> = props => {
   const selectAppSettings = (state: AppState) => state.appSettings;
-  const { headerFontSize } = useSelector(selectAppSettings);
+  const { headerFontSize, fontSelected } = useSelector(selectAppSettings);
 
   return (
     <View style={globalStyles.headerContainer}>
-      <Text style={styles.title(headerFontSize)}>{props.title}</Text>
+      <Text style={styles.title(headerFontSize, fontSelected.boldFont)}>
+        {props.title}
+      </Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create<any>({
-  title: (fontSize: number) => ({
-    fontFamily: 'Avenir-Book',
+  title: (fontSize: number, font: string) => ({
+    fontFamily: font,
     fontSize,
     textAlign: 'center',
   }),

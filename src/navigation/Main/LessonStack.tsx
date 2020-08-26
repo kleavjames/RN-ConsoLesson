@@ -20,7 +20,7 @@ import {
   LessonElevenContainer,
   LessonTwelveContainer,
 } from '../../container/Lessons';
-import SettingsContainer from '../../container/General/SettingsContainer';
+import AppSettingsContainer from './AppSettingStack';
 import { LessonStackTypes } from '../../types/Navigation';
 
 const Stack = createStackNavigator<LessonStackTypes>();
@@ -35,16 +35,12 @@ export default ({ navigation }: { navigation: any }) => (
           size={25}
           color={Theme.DARK_COLOR}
           backgroundColor={Theme.WHITE_COLOR}
-          onPress={() => navigation.navigate('Settings')}
+          onPress={() => navigation.navigate('AppSettings')}
         />
       ),
       ...navigationStyles.navigatorStyle,
     }}>
-    <Stack.Screen
-      name="Lessons"
-      component={LessonsScreen}
-      options={{ headerRight: undefined }}
-    />
+    <Stack.Screen name="Lessons" component={LessonsScreen} />
     <Stack.Screen name="Introduction" component={IntroductionContainer} />
     <Stack.Screen
       name="Lesson1"
@@ -109,8 +105,8 @@ export default ({ navigation }: { navigation: any }) => (
       options={{ title: 'Lesson 12' }}
     />
     <Stack.Screen
-      name="Settings"
-      component={SettingsContainer}
+      name="AppSettings"
+      component={AppSettingsContainer}
       options={{
         title: 'Settings',
         headerShown: false,

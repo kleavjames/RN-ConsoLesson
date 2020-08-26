@@ -1,0 +1,68 @@
+{
+    "label": "Lesson 4",
+    "title": "Spiritual Growth And Importance Of House Church",
+    "scripture": [{
+        "title": "",
+        "book": "Mark 14:37-38",
+        "message": "37 Then he returned to his disciples and found them sleeping. “Simon,”he said to Peter, “are you asleep? Couldn’t you keep watch for one hour? 38 Watch and pray so that you will not fall into temptation. The spirit is willing, but the flesh is weak.”"
+    }, {
+        "title": "",
+        "book": "Hebrews 4:12",
+        "message": "For the word of God is full of living power. It is sharper than the sharpest knife, cutting deep into our innermost thoughts and desires. It exposes us for what we really are."
+    }],
+    "objective": {
+        "label": "Objective",
+        "message": "To teach the new believer what they need to do in order to grow in their Christian life and how to receive Godly guidance in making decisions."
+    },
+    "topic": {
+        "first": {
+            "number": 1,
+            "title": "Make sure they have a bible",
+            "message": "...what version, make sure they know how to use it, know what the Old and New Testament is, etc."
+        },
+        "second": {
+            "number": 2,
+            "title": "Teach them how to do a devotional",
+            "message": "beginning with the New Testament. Guidelines: read three chapters each morning in the New Testament, apply the following topics in a journal after choosing the verses for that day:",
+            "reference": {
+                "title": "",
+                "items": ["Message to You", "Promises for You", "Commands", "Warnings", "Personal Application"]
+            }
+        },
+        "third": {
+            "number": 3,
+            "title": "Teach them to leave a legacy to their family about what God has done in their lives!",
+            "message": "Give personal testimony about your devotional life and how it has helped you."
+        },
+        "fourth": {
+            "number": 4,
+            "title": "Teach the new believer how to pray to God in a conversational way.",
+            "message": "Tell them to be open with God, He wants to help them in every area of their life and He cares about their family too. He hears their prayers!"
+        },
+        "fifth": {
+            "number": 5,
+            "title": "Prayer and devotionals will help them make decisions that shape their future.",
+            "message": "They need to listen to God and obey what He says, which will bring great blessings in their lives! The new believer doesn’t have to do it alone anymore; they have Jesus to guide them and you to help as well!"
+        },
+        "sixth": {
+            "number": 6,
+            "title": "Minister to the new believer to start on a daily discipline of reading the Bible and praying.",
+            "message": "Pray for them so that they see how to do it, and allow them the opportunity to pray if they wish to."
+        },
+        "seventh": {
+            "number": 7,
+            "title": "Emphasize Four Things: Support, Strength, Friends and Encouragement.",
+            "message": "",
+            "scripture": [{
+                "title": "",
+                "book": "Acts 2:44, 46-47",
+                "message": "And all the believers met together constantly and shared everything they had. They worshiped together at the Temple each day, met in homes for the Lord's Supper, and shared their meals with great joy and generosity--all the while praising God and enjoying the goodwill of all the people. And each day the Lord added to their group those who were being saved."
+            }, {
+                "title": "",
+                "book": "Hebrews 10:25",
+                "message": "...not neglecting to meet together, as is the habit of some, encouraging one another; and all the more as you see the day drawing near."
+            }]
+        }
+    },
+    "request": "PRAY FOR THEM"
+}

@@ -1,12 +1,16 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigation } from '@react-navigation/native';
 
 import { customNavigation } from '../../actions';
 import LessonFour from '../../components/Lessons/LessonFour';
+import { AppState } from '../../reducers';
 
 export default () => {
+  const selectAppSettings = (state: AppState) => state.appSettings;
+  const { headerFontSize, fontSelected } = useSelector(selectAppSettings);
   const dispatch = useDispatch();
+
   const navigation = useNavigation();
 
   const hideTabBar = () => dispatch(customNavigation.onHideTab());
@@ -20,5 +24,12 @@ export default () => {
     return unsubscribe;
   }, [navigation]);
 
-  return <LessonFour hideTabBar={hideTabBar} showTabBar={showTabBar} />;
+  return (
+    <LessonFour
+      hideTabBar={hideTabBar}
+      showTabBar={showTabBar}
+      headerFontSize={headerFontSize}
+      fontSelected={fontSelected.boldFont}
+    />
+  );
 };

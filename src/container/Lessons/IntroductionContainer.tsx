@@ -1,14 +1,11 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useNavigation } from '@react-navigation/native';
 
 import { customNavigation } from '../../actions';
 import Introduction from '../../components/Lessons/Introduction';
-import { AppState } from '../../reducers';
 
 export default () => {
-  const selectAppSettings = (state: AppState) => state.appSettings;
-  const { headerFontSize, fontSelected } = useSelector(selectAppSettings);
   const dispatch = useDispatch();
 
   const navigation = useNavigation();
@@ -24,12 +21,5 @@ export default () => {
     return unsubscribe;
   }, [navigation]);
 
-  return (
-    <Introduction
-      hideTabBar={hideTabBar}
-      showTabBar={showTabBar}
-      headerFontSize={headerFontSize}
-      boldFontSelected={fontSelected.boldFont}
-    />
-  );
+  return <Introduction hideTabBar={hideTabBar} showTabBar={showTabBar} />;
 };

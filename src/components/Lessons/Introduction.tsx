@@ -1,18 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { View, ScrollView } from 'react-native';
 
 import lesson from '../../assets/data/introduction.json';
-import { Theme } from '../../constants';
 import { globalStyles } from '../../config/styles';
 import { ScrollEvent } from '../../helpers';
-import { Paragraph, Section, Header, Reference } from '../common';
+import { Paragraph, Section, Header, Reference, Message } from '../common';
 import { AppActions } from '../../types/actions';
 
 interface Props {
   showTabBar: () => AppActions;
   hideTabBar: () => AppActions;
-  headerFontSize: number;
-  boldFontSelected: string;
 }
 
 interface ParagraphProps {
@@ -25,14 +22,7 @@ const RenderParagraph: React.FC<ParagraphProps | any> = ({ sentences }) => {
   ));
 };
 
-const Introduction: React.FC<Props> = ({
-  showTabBar,
-  hideTabBar,
-  headerFontSize,
-  boldFontSelected,
-}) => {
-  console.log('bold font selected', boldFontSelected);
-
+const Introduction: React.FC<Props> = ({ showTabBar, hideTabBar }) => {
   return (
     <View style={globalStyles.container}>
       <ScrollView
@@ -43,27 +33,10 @@ const Introduction: React.FC<Props> = ({
         <Reference topic={lesson.mainTopic} />
         <RenderParagraph sentences={lesson.introductionTwo} />
         <Section lesson={lesson.declaration} />
-        <View style={styles.last}>
-          <Text style={styles.lastText(headerFontSize, boldFontSelected)}>
-            {lesson.request}
-          </Text>
-        </View>
+        <Message message={lesson.request} />
       </ScrollView>
     </View>
   );
 };
-
-const styles = StyleSheet.create<any>({
-  last: {
-    marginHorizontal: 40,
-    marginBottom: 30,
-  },
-  lastText: (fontSize: number, font: string) => ({
-    fontSize,
-    fontFamily: font,
-    textAlign: 'center',
-    color: Theme.LABEL_COLOR,
-  }),
-});
 
 export default Introduction;

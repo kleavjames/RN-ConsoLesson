@@ -1,26 +1,18 @@
 import React from 'react';
-import { StyleSheet, View, ScrollView, Text } from 'react-native';
+import { View, ScrollView } from 'react-native';
 
 import lesson from '../../assets/data/lesson-4.json';
 import { AppActions } from '../../types/actions';
 import { globalStyles } from '../../config/styles';
-import { Theme } from '../../constants';
 import { ScrollEvent } from '../../helpers';
-import { Header, Verse, Section, Topic, Reference } from '../common';
+import { Header, Verse, Section, Topic, Reference, Message } from '../common';
 
 interface Props {
   showTabBar: () => AppActions;
   hideTabBar: () => AppActions;
-  headerFontSize: number;
-  fontSelected: string;
 }
 
-const LessonFour: React.FC<Props> = ({
-  showTabBar,
-  hideTabBar,
-  headerFontSize,
-  fontSelected,
-}) => {
+const LessonFour: React.FC<Props> = ({ showTabBar, hideTabBar }) => {
   return (
     <View style={globalStyles.container}>
       <ScrollView
@@ -38,27 +30,10 @@ const LessonFour: React.FC<Props> = ({
         <Topic topic={lesson.topic.fifth} />
         <Topic topic={lesson.topic.sixth} />
         <Topic topic={lesson.topic.seventh} />
-        <View style={styles.last}>
-          <Text style={styles.lastText(headerFontSize, fontSelected)}>
-            {lesson.request}
-          </Text>
-        </View>
+        <Message message={lesson.request} />
       </ScrollView>
     </View>
   );
 };
-
-const styles = StyleSheet.create<any>({
-  last: {
-    marginHorizontal: 40,
-    marginBottom: 30,
-  },
-  lastText: (fontSize: number, font: string) => ({
-    fontSize,
-    fontFamily: font,
-    textAlign: 'center',
-    color: Theme.LABEL_COLOR,
-  }),
-});
 
 export default LessonFour;

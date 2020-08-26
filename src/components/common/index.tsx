@@ -7,3 +7,4 @@ export { default as Topic } from './Topic';
 export { default as Verse } from './Verse';
 export { default as Divider } from './Divider';
 export { default as Reference } from './Reference';
+export { default as Message } from './Message';

@@ -7,6 +7,7 @@ import LessonSix from '../../components/Lessons/LessonSix';
 
 export default () => {
   const dispatch = useDispatch();
+
   const navigation = useNavigation();
 
   const hideTabBar = () => dispatch(customNavigation.onHideTab());

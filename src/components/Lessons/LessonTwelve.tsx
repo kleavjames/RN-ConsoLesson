@@ -1,18 +1,29 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, ScrollView } from 'react-native';
 
-export default () => {
+import lesson from '../../assets/data/lesson-12.json';
+import { AppActions } from '../../types/actions';
+import { globalStyles } from '../../config/styles';
+import { ScrollEvent } from '../../helpers';
+import { Header, Section, Verse } from '../common';
+
+interface Props {
+  showTabBar: () => AppActions;
+  hideTabBar: () => AppActions;
+}
+
+const LessonTwelve: React.FC<Props> = ({ showTabBar, hideTabBar }) => {
   return (
-    <View style={styles.container}>
-      <Text>Lesson 12</Text>
+    <View style={globalStyles.container}>
+      <ScrollView
+        onScroll={e => ScrollEvent.onStartScroll(e, showTabBar, hideTabBar)}
+        scrollEventThrottle={0}>
+        <Header title={lesson.title} />
+        <Verse scripture={lesson.scripture[0]} />
+        <Section lesson={lesson.note} />
+      </ScrollView>
     </View>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
+export default LessonTwelve;
